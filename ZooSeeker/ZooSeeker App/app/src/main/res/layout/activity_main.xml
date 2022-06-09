@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Relative Layout-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:id="@+id/relativelayout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:orientation="vertical">
+
+        <!--List View from which data is to be searched-->
+        <TextView
+            android:layout_width="391dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="List of Zoo Animals"
+            android:textSize="20sp" />
+
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
+
+        <Button
+            android:id="@+id/deletePlan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete Saved Plan"
+            android:onClick="deleteSavedPlan"/>
+
+        <Button
+            android:id="@+id/deleteExhibits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete Saved Exhibits"
+            android:onClick="deleteSavedExhibits"/>
+
+        <TextView
+            android:id="@+id/numberCount"
+            android:layout_width="398dp"
+            android:layout_height="95dp"
+            android:gravity="center"
+            android:text="Exhibits to Visit: 0"
+            android:textSize="20sp" />
+
+        <ListView
+            android:id="@+id/listView2"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get Plan!"
+            android:onClick="openPlan"/>
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!--    test comment -->
+
+    </LinearLayout>
+</ScrollView>
